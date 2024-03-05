@@ -1,5 +1,8 @@
 package edu.badpals.appStockX;
 
+import edu.badpals.stockx.item.Item;
+import edu.badpals.stockx.item.Sneaker;
+
 /**
  * StockX nació en Detroit, y allí siguen haciendo
  * las cosas a la manera tradicional, 
@@ -23,7 +26,7 @@ public class Stockx {
     public static void main(String[] args) {
 
         /**
-         * Crear la zapatilla 
+         * Crear la zapatilla
          * y printar sus datos.
          *
          * Lee la funcion draw() del main
