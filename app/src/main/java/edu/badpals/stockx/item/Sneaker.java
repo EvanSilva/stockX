@@ -1,5 +1,6 @@
 package edu.badpals.stockx.item;
-
+import java.util.ArrayList;
+import java.util.List;
 
 public class Sneaker implements Item{
 
@@ -8,6 +9,7 @@ public class Sneaker implements Item{
     private int ask = 0;
     private int bid = 0;
     private int sale = 0;
+    private List<Offer> offers = new ArrayList<Offer>();
 
     public Sneaker (String style, String name) {
         this.style = style;
@@ -21,7 +23,7 @@ public class Sneaker implements Item{
         return this.name;
     }
 
-/**
+
     @Override
     public int getBid() {
         return this.bid;
@@ -39,6 +41,7 @@ public class Sneaker implements Item{
 
     @Override
     public void add(Offer offer) {
+        ;
     }
 
     @Override
@@ -47,7 +50,7 @@ public class Sneaker implements Item{
 
     @Override
     public List<Offer> offers() {
-        return null;
+        return this.offers;
     }
 
     @Override
@@ -59,5 +62,8 @@ public class Sneaker implements Item{
 
     }
 
-*/
+    @Override
+    public String toString() {
+        return this.name+"\n \t \t"+ this.style ;
+    }
 }

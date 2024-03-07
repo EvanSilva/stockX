@@ -1,6 +1,6 @@
 package edu.badpals.stockx.item;
 
-public class Sale extends Offer {
+public class Sale implements Offer {
 
     public String size = "";
     public Integer price = 0;
@@ -21,10 +21,10 @@ public class Sale extends Offer {
     }
 
     @Override
-    public int compareTo(Offer oferta) {
-        return 0;
+    public int compareTo(Offer offer) {
+        return this.price.compareTo(value());
     }
-// ¿?
+
     @Override
     public String toString() {
         return super.toString();

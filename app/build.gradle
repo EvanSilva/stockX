@@ -34,7 +34,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = 'edu.badpals.stockx.App'
+    mainClass = 'edu.badpals.appStockX.Stockx'
 }
 
 tasks.named('test') {

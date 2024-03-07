@@ -1,5 +1,7 @@
 package edu.badpals.stockx.item;
 
+import java.util.List;
+
 public interface Item {
 
     public int getBid();
@@ -8,10 +10,10 @@ public interface Item {
 
     public int getSale();
 
-//    public void add(Offer offer);
+    public void add(Offer offer);
     public void setBid(int bid);
 
-//    public List<Offer> offers();
+    public List<Offer> offers();
 
     public void setAsk(int ask);
 

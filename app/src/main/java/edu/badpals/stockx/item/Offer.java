@@ -1,6 +1,6 @@
 package edu.badpals.stockx.item;
 
-public interface Offer {
+public interface Offer extends Comparable<Offer> {
 
     
     public String size();
