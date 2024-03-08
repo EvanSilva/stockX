@@ -1,5 +1,9 @@
-package edu.badpals.appStockX;
+package edu.badpals.stockx;
 
+import edu.badpals.stockx.criteria.Asks;
+import edu.badpals.stockx.criteria.Bids;
+import edu.badpals.stockx.criteria.Criteria;
+import edu.badpals.stockx.item.Ask;
 import edu.badpals.stockx.item.Bid;
 import edu.badpals.stockx.item.Item;
 import edu.badpals.stockx.item.Sneaker;
@@ -56,7 +60,7 @@ public class Stockx {
          * y añadirlas a la zapatilla
          * en sus offers.
          */
-/**
+
         Ask ask = new Ask("13", 288);
         sneaker.add(ask);
         sneaker.add(new Ask("6", 600));
@@ -70,16 +74,16 @@ public class Stockx {
          * offers de la zapatilla. 
          */
 
-/**        Criteria bids = new Bids();
+        Criteria bids = new Bids();
         System.out.println("\n\t\t All BIDS");
         bids.checkCriteria(sneaker).forEach(System.out::print);
 
         /**
          * Crea el filtro "Asks" que filtra
          * solo las asks de entre las
-         * offers de la zapatilla. 
+         * offers de la zapatilla.
          */
-/**
+
         Criteria asks = new Asks();
         System.out.println("\n\t\t All ASKS");
         asks.checkCriteria(sneaker).forEach(System.out::print);
@@ -96,7 +100,7 @@ public class Stockx {
          * Guarda esta bid maxima en la
          * propiedad bid de sneaker.
          */
-/**
+
         Criteria maxBid = new MaxBid();
         List<Offer> maximum = maxBid.checkCriteria(sneaker);
         sneaker.setBid(maximum.isEmpty() ? 0 : maximum.get(0).value());
