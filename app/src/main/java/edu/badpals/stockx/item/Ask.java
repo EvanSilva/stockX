@@ -6,14 +6,17 @@ public class Ask implements Offer {
     Integer ask = 0;
 
     public Ask (String size,Integer ask) {
+        this.size = size;
+        this.ask = ask;
+
     }
     @Override
     public String size() {
-        return null;
+        return this.size;
     }
     @Override
     public int value() {
-        return 0;
+        return this.ask;
     }
 
     @Override
@@ -23,6 +26,6 @@ public class Ask implements Offer {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "\t\t" + this.size() + "\t" + this.value() +"\n";
     }
 }

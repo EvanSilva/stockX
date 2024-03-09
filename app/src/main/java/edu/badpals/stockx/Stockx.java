@@ -3,10 +3,10 @@ package edu.badpals.stockx;
 import edu.badpals.stockx.criteria.Asks;
 import edu.badpals.stockx.criteria.Bids;
 import edu.badpals.stockx.criteria.Criteria;
-import edu.badpals.stockx.item.Ask;
-import edu.badpals.stockx.item.Bid;
-import edu.badpals.stockx.item.Item;
-import edu.badpals.stockx.item.Sneaker;
+import edu.badpals.stockx.criteria.MaxBid;
+import edu.badpals.stockx.item.*;
+
+import java.util.List;
 
 /**
  * StockX nació en Detroit, y allí siguen haciendo

@@ -7,7 +7,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SneakerTest {
-    @Test void appHasAGreeting() {
+    @Test
+    void Sneaker() {
         Sneaker zapa = new Sneaker("Adidas", "ElEbano");
         assertEquals("Adidas", zapa.getStyle());
         assertEquals("ElEbano", zapa.getName());
