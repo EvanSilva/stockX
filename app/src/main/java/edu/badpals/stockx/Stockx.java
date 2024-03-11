@@ -1,9 +1,6 @@
 package edu.badpals.stockx;
 
-import edu.badpals.stockx.criteria.Asks;
-import edu.badpals.stockx.criteria.Bids;
-import edu.badpals.stockx.criteria.Criteria;
-import edu.badpals.stockx.criteria.MaxBid;
+import edu.badpals.stockx.criteria.*;
 import edu.badpals.stockx.item.*;
 
 import java.util.List;
@@ -118,7 +115,7 @@ public class Stockx {
          * Guarda esta ask minima en la propiedad
          * ask de sneaker.
          */
-/**
+
         Criteria minAsk = new MinAsk();
         List<Offer> minimum = minAsk.checkCriteria(sneaker);
         sneaker.setAsk(minimum.isEmpty() ? 0 : minimum.get(0).value());
@@ -131,7 +128,7 @@ public class Stockx {
          * en la que se producen, de mas antigua
          * a mas reciente.
          */
-/**
+
         Sale sale = new Sale("6", 356);
         sneaker.add(sale);
         sneaker.add(new Sale("9.5", 352));
@@ -144,7 +141,7 @@ public class Stockx {
          * solo las ventas /sales de entre las 
          * offers de la zapatilla.
          */
-/**
+
         Criteria sales = new Sales();
         System.out.println("\n\t\t All SALES");
         sales.checkCriteria(sneaker).forEach(System.out::print);
@@ -155,7 +152,7 @@ public class Stockx {
          * es la ultima en ser incluida
          * en sneaker).
          */
-/**
+
         Criteria lastSale = new LastSale();
 
         List<Offer> actualSale = lastSale.checkCriteria(sneaker);
