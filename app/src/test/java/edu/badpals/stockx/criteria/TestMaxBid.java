@@ -35,7 +35,6 @@ public class TestMaxBid {
         List<Offer> filteredBids = maximunBid.checkCriteria(sneaker);
         assertEquals(900, filteredBids.get(0).value());
 
-
     }
 
 
