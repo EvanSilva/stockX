@@ -41,11 +41,12 @@ public class Sneaker implements Item{
 
     @Override
     public void add(Offer offer) {
-        ;
+        this.offers.add(offer);
     }
 
     @Override
     public void setBid(int bid) {
+        this.bid = bid;
     }
 
     @Override
@@ -55,11 +56,12 @@ public class Sneaker implements Item{
 
     @Override
     public void setAsk(int ask) {
+        this.ask = ask;
 
     }
     @Override
     public void setSale(int sale) {
-
+         this.sale = sale;
     }
 
     @Override

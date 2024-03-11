@@ -4,7 +4,7 @@ public class Bid implements Offer {
 
     String size = "";
     Integer bid = 0;
-    public Bid (String size, Integer Bid) {
+    public Bid (String size, Integer bid) {
         this.bid = bid;
         this.size = size;
     }
@@ -21,7 +21,7 @@ public class Bid implements Offer {
 
     @Override
     public int compareTo(Offer offer) {
-        return this.bid.compareTo(value());
+        return this.bid.compareTo(offer.value());
     }
 
     @Override

@@ -11,14 +11,10 @@ public class MaxBid implements Criteria {
     }
 
     public List<Offer> checkCriteria(Item item) {
-        Bids bidCriteria = new Bids();
-        List<Offer> bids = bidCriteria.checkCriteria(item);
+        Bids bids = new Bids();
+        List<Offer> bidsList = bids.checkCriteria(item);
         List<Offer> maxBid = new ArrayList<Offer>();
-        if (!bids.isEmpty()) {
-            maxBid.add(bids.get(0));
-        } else {
-            System.out.println("\n \t      Aun no hay Bids");
-        }
+        maxBid.add(bidsList.get(0));
         return maxBid;
     }
 }
